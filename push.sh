@@ -21,4 +21,4 @@ done
 
 git add .
 git commit -am "$MSSG"
-git push heroku HEAD
+git push origin HEAD
