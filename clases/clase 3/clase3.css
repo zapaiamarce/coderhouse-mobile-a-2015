@@ -1,0 +1,9 @@
+@media (max-width: 600px) {
+  .example {
+    display: none;
+  }
+}
+
+@media print and (min-resolution: 300dpi) {  }
+
+@media screen and (min-resolution: 2dppx) {  }
