@@ -3,6 +3,9 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Clase 3</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+	<link rel="stylesheet" href="prueba.css">
 	<link rel="stylesheet" media="(max-width: 800px)" href="example.css" />
 </head>
 <body>
@@ -21,11 +24,20 @@
 		List-style-position
 		List-style-image
 		List-style
-
+	
 		Tipografia web
 		Media queries
 		Twitter Bootstrap
+		Grillas
 	 -->
+
+	 <ul class="lista">
+	 	<li>item</li>
+	 	<li>item</li>
+	 	<li>item</li>
+	 	<li>item</li>
+	 	<li>item</li>
+	 </ul>
 
 	<table>
 		<thead>
@@ -51,17 +63,37 @@
 
 	<form action="post.php" method="post">
 		<fieldset>
-			<legend>Texto Corto</legend>
-			<label for="name">Nombre</label>
-			<input type="text" name="name" id="texto">
+			<!-- <legend>Texto Corto</legend> -->
+			<label for="nombre">Nombre</label>
+			<input type="text" name="nombre" id="nombre" placeholder="pepe">
 		</fieldset>
 		<fieldset>
-			<legend>Texto Largo</legend>
+			<!-- <legend>Texto Corto</legend> -->
+			<label for="usuarioEmail">Email</label>
+			<input type="email" name="usuarioEmail" id="usuarioEmail">
+
+		</fieldset>
+		<fieldset>
+			<!-- <legend>Apellido</legend> -->
+			<label for="year">Fecha de nac</label>
+			<div>
+				<select id="year">
+					<option value="3">3</option>
+					<option value="3">3</option>
+					<option value="3">3</option>
+					<option value="3">3</option>
+				</select>
+				<select id="month"></select>
+				<select id="day"></select>
+			</div>
+		</fieldset>
+		<fieldset>
+			<!-- <legend>Texto Largo</legend> -->
 			<label for="texto">Nombre</label>
 			<textarea name="texto" id="texto" cols="30" rows="10"></textarea>
 		</fieldset>
 		<fieldset>
-			<input type="submit">
+			<input type="submit" value="enviar">
 		</fieldset>
 	</form>
 </body>

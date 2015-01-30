@@ -1,0 +1,12 @@
+/*@import url(../fonts/opensans/stylesheet.css);*/
+
+body{
+	/*font-family: 'open_sansregular';*/
+	font-family: 'Open Sans', sans-serif;
+	font-size: 40px;
+	color: red;
+}
+
+.fa-twitter{
+	color: blue;
+}
