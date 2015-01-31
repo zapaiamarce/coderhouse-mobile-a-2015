@@ -3,10 +3,73 @@
 body{
 	/*font-family: 'open_sansregular';*/
 	font-family: 'Open Sans', sans-serif;
-	font-size: 40px;
+	/*font-size: 40px;*/
 	color: red;
 }
-
+a,h1{
+	cursor: pointer;
+}
+h1{
+	display: inline;
+}
 .fa-twitter{
 	color: blue;
+}
+
+section.main section.content,
+section.main nav.navigation
+{
+	display: inline-block;
+	height: 400px;
+}
+section.main nav.navigation{
+	font-size: 20px;
+}
+
+.row{
+
+}
+.row > :last-child{
+	margin-right: 0;
+}
+
+
+header.main{
+	margin: 0 auto;
+	width: 770px;
+	background-color: #CDCDCD;
+}
+
+@media print{ 
+	header.main{
+		display: none;
+	}
+}
+
+@media (max-width: 275px) {
+  div.menu,
+  nav.elOtro {
+    display: none;
+  }
+}
+
+.col-1,
+.col-2,
+.col-3,
+.col-6{
+	display: inline-block;
+	margin-right: 10px;
+}
+
+.col-1{
+	width: 60px;
+}
+.col-2{
+	width: 130px;
+}
+.col-3{
+	width: 200px;
+}
+.col-6{
+	width: 410px;
 }
