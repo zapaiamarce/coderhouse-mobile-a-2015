@@ -1,0 +1,42 @@
+.circulo{
+	border-radius: 50%;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	height: 100px;
+	width: 100px;
+	background-color: red;
+}
+
+body{
+
+	background-color: #f9f9f9;
+	/*background-color: #cdcdcd;*/
+}
+
+header{
+	height: 50px;
+	background-color: #333;
+}
+
+section.main{
+	/*background-color: #666;*/
+	padding-top: 36px;
+
+}
+
+section.main > section.content{
+	margin: 0 24px;
+	padding: 18px 12px  27px;
+	background-color: white;
+	border-radius: 3px;
+
+}
+section.main > section.content > section{
+	border-bottom: 3px solid #f0f0f0;
+	margin-bottom: 20px;
+}
+
+footer{
+
+}

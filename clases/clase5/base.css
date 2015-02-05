@@ -1,0 +1,12 @@
+h1.main{
+	font-size: 16px;
+	margin-top: 2px;
+	border-bottom: 3px solid #f0f0f0;
+	padding-bottom: 25px;
+}
+
+h2.subtitle{
+	font-size: 14px;
+	margin-top: 2px;
+	padding-bottom: 20px;
+}

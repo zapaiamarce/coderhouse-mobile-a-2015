@@ -1,0 +1,61 @@
+body{
+}
+button.main{
+	background-color: blue;
+	border-radius: 3px;
+	font-size: 50px;
+	color: white;
+	padding: 20px 40px;
+	border: none;	
+	transition:1s all;
+}
+button.main:hover{
+	background-color: red;
+	box-shadow: 10px 6px 20px 0px rgba(50, 50, 50, 0.59);
+}
+
+.cajaRoja{
+	width: 100px;
+	height: 100px;
+	background-color: red;
+	text-align: center;
+	padding-top: 40px;
+	box-sizing:border-box;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin: -50px 0 0 -50px;
+	transition:.5s all;
+	
+}
+
+.uno{
+	font-family: 'Droid Sans', sans-serif;
+}
+.dos{
+	font-family: 'Source Sans Pro', sans-serif;
+}
+.tres{
+	font-family: 'Lato', sans-serif;
+}
+.cuatro{
+	font-family: 'Lora', sans-serif;
+}
+.cinco{
+	font-family: 'PT Sans', sans-serif;
+}
+.seis{
+	font-family: 'PT Sans Narrow', sans-serif;
+}
+.siete{
+	font-family: 'Arimo', sans-serif;
+}
+.ocho{
+	font-family: 'Ubuntu', sans-serif;
+}
+.nueve{
+	font-family: 'Lobster', sans-serif;
+}
+.diez{
+	font-family: 'Droid Serif', sans-serif;
+}
