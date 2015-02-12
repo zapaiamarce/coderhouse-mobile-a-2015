@@ -1,0 +1,13 @@
+.red{
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	background-color: red;
+	top: 100px;
+	left: 100px;
+	transition:left 1s;
+}
+
+.red.final{
+	left: 500px;
+}
