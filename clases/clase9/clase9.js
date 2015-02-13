@@ -4,8 +4,38 @@ var tag = document.getElementsByTagName('article')[0].getElementsByTagName('li')
 var counter = 0;
 
 var intervalo = function(argument) {
-	document.getElementsByTagName('div')[0].className = 'red final';
+	var div = document.getElementsByTagName('div')[0];
+	console.log(div.classList)
 	// console.log(counter++);
 }
-// setTimeout(intervalo,3000);
-setInterval(intervalo,1000);
+setTimeout(intervalo,1);
+// setInterval(intervalo,1000);
+
+var p = document.getElementById('parrafo');
+
+// Forma A
+// var animar = function(){
+// 	var counter = 100;
+// 	var interval = setInterval(function(){
+// 		var div = document.getElementsByTagName('div')[0];
+
+// 		div.style.left = ((counter++) + 'px');
+// 		if(counter>400){
+// 			clearInterval(interval);
+// 		}
+// 		// console.log(counter++);
+// 	},1);
+// }
+
+// Forma B
+// var animar = function(){
+// 	var div = document.getElementsByTagName('div')[0];
+// 	div.style.transition = 'left .5s';
+// 	setTimeout(function(){
+// 		div.style.left = '400px';
+// 	},2);
+// }
+
+// setInterval(function(){
+// 	div.
+// },1);

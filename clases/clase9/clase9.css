@@ -5,7 +5,7 @@
 	background-color: red;
 	top: 100px;
 	left: 100px;
-	transition:left 1s;
+	/*transition:	 1s;*/
 }
 
 .red.final{
