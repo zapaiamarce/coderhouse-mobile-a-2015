@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Clase 11</title>
+	<link rel="stylesheet" href="clase11.css">
+</head>
+<body>
+	<p>
+		Prototipo > Contructor (elemento) > Lo guarda en this (va a recibir el UL)
+	</p>
+  	<p>
+		Prototipo > metodo borrarPorIndice(numeroDeIndice) >  Borra un li basado en su numero de orden
+  	</p>
+	<p>
+		Prototipo > metodo borrarPorDataId(valor) > borrar el LI que tenga ese valor en el atributo data-id
+	</p>
+  
+	<section data-main>
+      <ul class="nuevaLista">
+          <li>1</li>
+          <li>2</li>
+          <li>3</li>
+          <li data-id="cualquiera">4</li>
+          <li data-id='ok'>5</li>
+          <li>6</li>
+          <li>7</li>
+          <li>8</li>
+      </ul>
+	</section>
+
+
+	<header>
+		<h1>Titulo</h1>
+		<nav>
+			<ul>
+				<li>
+					<a href="/">Home</a>
+				</li>
+				<li>
+					<a href="/">Home</a>
+				</li>
+				<li>
+					<a href="/">Home</a>
+				</li>
+				<li>
+					<a href="/">Home</a>
+				</li>
+			</ul>
+		</nav>
+	</header>
+	<section id="main">
+		<ul class="lista">
+			<li>Contenido</li>
+			<li>Contenido</li>
+			<li class="tercero">Contenido</li>
+			<li data-pepe="ok">Contenido</li>
+			<li>Contenido</li>
+			<li>Contenido</li>
+			<li>Contenido</li>
+			<li>Contenido</li>	
+		</ul>
+	</section>
+	<script src="clase11.js"></script>
+</body>
+</html>

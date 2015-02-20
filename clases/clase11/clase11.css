@@ -1,0 +1,19 @@
+header{
+	background-color: red;
+}
+header h1{
+	font-size: 10px;
+}
+
+header nav{}
+header nav ul{}
+header nav ul li{}
+
+section#main{
+	background-color: #CDCDCD;
+}
+
+section#main li{
+	background-color: #343434;
+	color: white;
+}
