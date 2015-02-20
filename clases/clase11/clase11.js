@@ -10,7 +10,6 @@ for (var i = 0; i < lis.length; i++) {
 	lis[i].innerHTML = 'Contenido ' + i;
 };
 
-
 // Esto debería funcionar
 var elUl = document.querySelector('ul');
 var elSection = elUl.parenNode;
