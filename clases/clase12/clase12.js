@@ -8,6 +8,10 @@ var onLoad = function(){
 		
 	// })
 
+	// list.onclick = function(){
+	// 	console.log('otra forma de escuchar un evento')
+	// }
+
 	// document.body.addEventListener('mouseover',function(e){
 	// 	console.log('this',this)
 	// 	console.log('target',e.target);
