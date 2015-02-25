@@ -17,11 +17,11 @@ var onLoad = function(){
 	// 	console.log('target',e.target);
 	// })
 
-	miForm.addEventListener('submit',function(e){
-		if(e.target.algoQueElUsuarioPuso.value != 'enviar'){
-			e.preventDefault();
-		}
-	})
+	// miForm.addEventListener('submit',function(e){
+	// 	if(e.target.algoQueElUsuarioPuso.value != 'enviar'){
+	// 		e.preventDefault();
+	// 	}
+	// })
 
 	// document.body.addEventListener('mouseover',function(e){
 	// 	console.log('this',this)
