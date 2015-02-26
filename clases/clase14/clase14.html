@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Buscador Meli</title>
+	<script src="clase14.js"></script>
+</head>
+<body>
+	<header>
+		<form class="search">
+			<fieldset>
+				<label for="search">Buscar:</label>
+				<input type="text" name="search" id="search">
+			</fieldset>
+		</form>
+	</header>
+	<p>
+		Usar formulario del header para generar un busqueda usando el api de MELI. Y crear un prototipo Resultado que vamos a intanciar por cada uno de los resultados.
+
+		El constructor va recibir cada objeto del array "results" del response del API y lo va a guardar
+
+		El prototipo va a tener un metodo generateHTML que va a generar una porcion de HTML (li, div o lo que quieran) y tiene que mostrar la imagen del producto el titulo y tiene que tener/ser un link hacia el detalle del producto. Este metodo va a devolver un nodo que van "appendear" al section.results
+
+		Ejemplo API: 'https://api.mercadolibre.com/sites/MLA/search?q=ipod'
+
+	</p>
+	<section class="results">
+		
+	</section>
+	
+</body>
+</html>

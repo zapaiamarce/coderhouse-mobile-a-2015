@@ -11,17 +11,28 @@
 
 $(function(){
 	console.log('A');
-	var url = 'https://api.mercadolibre.com/sites/MLA/search?q=ipod';
+	var url = 'https://api.mercadolibre.com/sites/MLA/search?q=ipod&limit=300';
+	var urlb = 'https://api.mercadolibre.com/sites/MLA/search?q=ipod';
+
+	var tag = $('<div><span>Hola</span></div>');
+	window.tag = tag;
 
 	var callback = function(data){
-		console.log('C');
+		// console.log('C');
 		// console.log(data)
-		for (var i = 0; i < data.results.length; i++) {
-			console.log(data.results[i].title)
-		};
+		// for (var i = 0; i < data.results.length; i++) {
+		// 	console.log(data.results[i].permalink)
+		// };
+		console.log('meli');
+	}
+
+	var callbackb = function(data){
+		console.log('melib');
+		console.log(data);
 	}
 
 	$.getJSON(url,callback);
+	$.getJSON(urlb,callbackb);
 
 	console.log('B');
 
