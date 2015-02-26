@@ -1,0 +1,30 @@
+nav ul{
+	display: inline-block;
+}
+
+nav ul li{
+	display: inline-block;
+}
+
+nav button{
+	display: none;
+}
+
+@media (max-width: 600px) {
+	nav ul{
+		background-color: gray;
+		position: absolute;
+		left: 20px;
+		top: 20px;
+		display: none;
+	}
+	nav.abierto ul{
+		display: block;
+	}
+	nav ul li{
+		display: block;
+	}
+	nav button{
+		display: block;
+	}
+}
