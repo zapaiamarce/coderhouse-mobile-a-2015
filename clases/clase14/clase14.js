@@ -16,7 +16,7 @@ $(function(){
 
 		for (var i = 0; i < resultados.length; i++) {
 			var result = new Result(resultados[i]);
-			var html =result.getHTML();
+			var html = result.getHTML();
 			$('section.results').append(html);
 		};
 	}

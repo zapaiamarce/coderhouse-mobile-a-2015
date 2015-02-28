@@ -4,7 +4,30 @@
 	<meta charset="UTF-8">
 	<title>Buscador Meli</title>
 	<script src='js/jquery-1.11.2.min.js'></script>
-	<script src="clase14.js"></script>
+	<script src='js/mustache.min.js'></script>
+	<!--script src="clase14.js"></script-->
+	<script src="tp.js"></script>
+
+	<script type="x-tmpl-mustache" id="template">
+		<div>
+			<a href="{{permalink}}">
+				<h1>{{title}}</h1>
+			</a>
+			<img src="{{thumbnail}}">
+		</div>
+	</script>
+
+	<script type="x-tmpl-mustache" id="templateCollection">
+		{{#results}}
+		<div>
+			<a href="{{permalink}}">
+				<h1>{{title}}</h1>
+				<h2>Precio: {{currency_id}} {{price}} </h2>
+			</a>
+			<img src="{{thumbnail}}">
+		</div>
+		{{/results}}
+	</script>
 </head>
 <body>
 	<header>
