@@ -7,61 +7,46 @@
 angular.module('starter', ['ionic'])
 
 .run(function($ionicPlatform) {
-  $ionicPlatform.ready(function() {
-    // Hide the accessory bar by default (remove this to show the accessory bar above the keyboard
-    // for form inputs)
-    if(window.cordova && window.cordova.plugins.Keyboard) {
-      cordova.plugins.Keyboard.hideKeyboardAccessoryBar(true);
-    }
-    if(window.StatusBar) {
-      StatusBar.styleDefault();
-    }
-  });
+    $ionicPlatform.ready(function() {
+        // Hide the accessory bar by default (remove this to show the accessory bar above the keyboard
+        // for form inputs)
+        if (window.cordova && window.cordova.plugins.Keyboard) {
+            cordova.plugins.Keyboard.hideKeyboardAccessoryBar(true);
+        }
+        if (window.StatusBar) {
+            StatusBar.styleDefault();
+        }
+    });
 })
 
 .config(function($stateProvider, $urlRouterProvider) {
 
-  
-  $stateProvider.state('home', {
-      url: "/home",
-      views: {
-        "home": { 
-          templateUrl: "templates/home.html",
-          controller:'HomeCtrl'
+    $stateProvider.state('main', {
+        url: "/main",
+        abstract:true,
+        templateUrl: "templates/layout.html"
+    });
+
+    $stateProvider.state('main.home', {
+        url: "/home",
+        views:{
+          contenedorUno:{
+            templateUrl: "templates/home.html",
+            controller:'HomeCtrl'
+          }
         }
-      }
-    })
+    });
 
-  $stateProvider.state('busc', {
-    url: "/buscador",
-    views: {
-      "buscador": { 
-        templateUrl: "templates/buscador.html" 
-      }
-    }
-  })
-  // $stateProvider
+    $stateProvider.state('main.buscador', {
+        url: "/buscador",
+        views:{
+          contenedorDos:{
+            templateUrl: "templates/buscador.html",
+            controller:'BuscadorCtrl'
+          }
+        }
+    });
 
-  // .state('layout', {
-  //   url: "/layout",
-  //   abstract:true,
-  //   templateUrl: "templates/layout.html"
-  // })
-
-  // .state('layout.home', {
-  //   url: "/home",
-  //   templateUrl: "templates/home.html"
-  // })
-
-  // .state('layout.buscador', {
-  //   url: "/buscador",
-  //   templateUrl: "templates/buscador.html"
-  // })
-
-  //el otro estado
-  
-  $urlRouterProvider.otherwise('/home');
+    $urlRouterProvider.otherwise('/main/home');
 
 });
-
-

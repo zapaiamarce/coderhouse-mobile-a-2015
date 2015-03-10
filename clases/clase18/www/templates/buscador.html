@@ -1,3 +1,27 @@
 <ion-view>
-	<h2>Buscador</h2>
+	
+	    <form class="bar bar-header item-input-inset" ng-submit="busqueda()">
+	    	
+		        <label class="item-input-wrapper">
+		            <i class="icon ion-ios7-search placeholder-icon"></i>
+		            <input type="search" placeholder="Search" ng-model="searchText">
+		        </label>
+		        <button class="button button-clear">
+		            Buscar
+		        </button>
+	    	
+	    </form>
+	    <ion-content>
+		    <div class="list">
+		        <a class="item item-thumbnail-left" 
+		           ng-repeat="pepe in productos" 
+		           ng-if="pepe.price>4000">
+
+		            <img src="{{pepe.thumbnail}}">
+		            <h2>{{pepe.title}}</h2>
+		            <p>{{pepe.price}}</p>
+		        </a>
+		        
+		    </div>
+		</ion-content>
 </ion-view>

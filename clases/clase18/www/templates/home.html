@@ -1,4 +1,14 @@
 <ion-view>
-	<h1>Esto es la home</h1>
-	{{texto}}
+	<ion-header-bar align-title="left" class="bar-positive">
+		<div class="buttons">
+		<button class="button" ng-click="doSomething()">Left Button</button>
+		</div>
+		<h1 class="title">Title!</h1>
+		<div class="buttons">
+		<button class="button">Right Button</button>
+		</div>
+	</ion-header-bar>
+	<ion-content>
+		<h1>{{texto}}</h1>
+	</ion-content>
 </ion-view>

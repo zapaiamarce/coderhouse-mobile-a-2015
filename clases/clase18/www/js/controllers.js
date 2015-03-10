@@ -9,3 +9,13 @@ angular.module('starter').controller('TestCtrl',function($scope,meli){
 .controller('HomeCtrl',function($scope){
 	$scope.texto = 'esto viene del scope'
 })
+
+.controller('BuscadorCtrl',function($scope,meli){
+	$scope.busqueda = function(){
+		meli.buscar($scope.searchText).success(function(res){
+			console.log(res)
+			$scope.productos = res.results;
+		})
+		
+	}
+})
