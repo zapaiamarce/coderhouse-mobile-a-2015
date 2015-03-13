@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title></title>
+
+    <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
+    <link href="css/ionic.app.css" rel="stylesheet">
+    -->
+
+    <!-- ionic/angularjs js -->
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+
+    <!-- cordova script (this will be a 404 during development) -->
+    <script src="lib/ngCordova/dist/ng-cordova.js"></script>
+    <script src="cordova.js"></script>
+
+    
+    <!-- 
+    <script src="lib/ngCordova/dist/ng-cordova-mocks.js"></script>
+     -->
+
+    <!-- your app's js -->
+    <script src="js/controllers.js"></script>
+    <script src="js/app.js"></script>
+</head>
+<body ng-app="starter">
+
+    <ion-pane>
+        <ion-header-bar class="bar-stable">
+            <h1 class="title">Ionic Blank Starter</h1>
+        </ion-header-bar>
+        
+
+
+        <ion-content ng-controller="MyController">
+            <ion-refresher pulling-text="Pull to refresh..." on-refresh="doRefresh()">
+            </ion-refresher>
+            <div>
+                {{location}}
+            </div>
+            <ion-list>
+                <ion-item>
+                  <button class="button" ng-click="getLocation()" >Sacar foto</button>
+                  
+                  <img src="{{imgSrc}}" alt="">
+                </ion-item>
+                <ion-item ng-repeat="item in items">Test</ion-item>
+                <ion-item >
+                <label for="">Buscar</label>
+                <input type="text">
+                </ion-item>
+            </ion-list>
+
+        </ion-content>
+        <ion-footer-bar align-title="left" keyboard-attach class="bar-assertive">
+       <h1 class="title">Title!</h1>
+     </ion-footer-bar>
+    </ion-pane>
+</body>
+
+</html>

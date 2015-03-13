@@ -1,0 +1,9 @@
+/* Empty. Add your own CSS if you like */
+p.price{
+	font-size: 30px;
+	/*height: 40px;*/
+	line-height: 1;
+}
+h2.itemTitle{
+	font-size: 20px;
+}

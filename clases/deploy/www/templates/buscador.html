@@ -1,0 +1,31 @@
+<ion-view>
+<ion-header-bar align-title="left">
+  
+	    <form class="bar bar-header item-input-inset" ng-submit="busqueda()">
+	    	
+		        <label class="item-input-wrapper">
+		            <i class="icon ion-ios7-search placeholder-icon"></i>
+		            <input type="search" placeholder="Search" ng-model="searchText">
+		        </label>
+		        <button class="button button-clear">
+		            Buscar
+		        </button>
+	    	
+	    </form>
+</ion-header-bar>
+	    <ion-content>
+		    <ion-list can-swipe="true">
+		        <ion-item class="item item-thumbnail-left" 
+		           ng-repeat="pepe in productos">
+
+		            <img src="{{pepe.thumbnail}}">
+		            <h2 class="itemTitle">{{pepe.title}}</h2>
+		            <p class="price">${{pepe.price}}</p>
+
+		             <ion-option-button class="button-positive">Share</ion-option-button>
+    				<ion-option-button class="button-assertive">Edit</ion-option-button>
+		        </ion-item>
+		        
+		    </ion-list>
+		</ion-content>
+</ion-view>
